@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8eb">
+  <meta name="description" content="Conecta: una ruta personal para conocerte, conversar y construir una relación con reciprocidad. Tus datos se quedan en tu navegador.">
+  <title>Conecta — Un atlas de encuentros</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="masthead">
+    <a class="brand" href="#ruta" aria-label="Conecta, inicio"><span class="brand-flower" aria-hidden="true">✳</span>conecta<span class="brand-dot">!</span><small>UN ATLAS DE ENCUENTROS</small></a>
+    <div class="sidebar" id="sidebar">
+    <nav aria-label="Navegación principal" id="navigation"></nav>
+    </div>
+    <div class="masthead-actions"><button class="backup-shortcut" data-action="backup" aria-label="Guardar mi proceso"><span data-icon="download"></span><span>Mi mochila</span></button><button class="profile-shortcut" data-action="profile" aria-label="Mi perfil"><span class="avatar" id="avatar">T</span><strong id="sidebar-name">Tu historia</strong></button><button class="icon-button menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar"><span data-icon="menu"></span></button></div>
+  </header>
+  <div class="app-shell">
+    <div class="topbar"><div class="topbar-left"><span class="breadcrumb">Mi aventura <span>↝</span> <strong id="page-label">El mapa</strong></span></div><div class="topbar-right"><span class="save-state" id="save-state"><span></span> Guardado en este navegador</span><button class="icon-button" data-action="help" aria-label="Cómo funciona"><span data-icon="help"></span></button></div></div>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer"><span>Las mejores historias se escriben entre dos. <i>Sin prisa.</i></span><button data-action="principles">Nuestra brújula <span data-icon="compass"></span></button></footer>
+  </div>
+  <div class="mobile-shade" id="mobile-shade"></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <noscript>Activa JavaScript para usar la ruta, el diario y las copias de seguridad. Todos funcionan sin servicios externos.</noscript>
+</body>
+</html>
